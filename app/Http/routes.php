@@ -72,6 +72,15 @@ Route::get('dosen_matakuliah/edit/{dosen_matakuliah}','dosen_matakuliahControlle
 Route::post('dosen_matakuliah/edit/{dosen_matakuliah}','dosen_matakuliahController@update');
 Route::get('dosen_matakuliah/hapus/{dosen_matakuliah}','dosen_matakuliahController@hapus');
 
+Route::get('mahasiswa','MahasiswaController@awal');
+Route::get('mahasiswa/lihat/{mahasiswa}','MahasiswaController@lihat');
+Route::post('mahasiswa/simpan','MahasiswaController@simpan');
+Route::get('mahasiswa/edit/{mahasiswa}','MahasiswaController@edit');
+Route::post('mahasiswa/edit/{mahasiswa}','MahasiswaController@update');
+Route::get('mahasiswa/hapus/{mahasiswa}','MahasiswaController@hapus');
+
+
+
 
 
 
